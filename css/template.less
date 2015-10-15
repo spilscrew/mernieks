@@ -305,36 +305,6 @@ html {
           &:nth-last-of-type(odd) {
             margin-left: 2%;
           }
-          table.contentTable {
-            border-collapse: collapse;
-            tr {
-              &:first-of-type,&:last-of-type {
-                border-bottom: 2px solid #dfd9cf;
-              }
-              &:nth-of-type(even) {
-                background: #f2ebe1;
-              }
-              td {
-                padding: 10px;
-                &:first-of-type {
-                  width: 83%;
-                }
-                &:last-of-type {
-                  width: 15%;
-                  font-weight: bold;
-                  text-align: right;
-                  vertical-align: top;
-                }
-                &:last-child {
-                  text-align: center;
-                }
-                &:first-child {
-                  font-weight: normal;
-                  text-align: left;
-                }
-              }
-            }
-          }
         }
       }
       .column3 {
@@ -422,6 +392,40 @@ html {
           filter: sepia(100%)
         }
       }
+    }
+  }
+}
+.note {
+  padding: 10px;
+  font-style: italic;
+}
+.contentTable {
+  border-collapse: collapse;
+  tr {
+    &:first-of-type,&:last-of-type {
+      border-bottom: 2px solid #dfd9cf;
+    }
+    &:nth-of-type(even) {
+      background: #f2ebe1;
+    }
+  }
+  td {
+    padding: 10px;
+    &:first-of-type {
+      width: 83%;
+    }
+    &:last-of-type {
+      width: 15%;
+      font-weight: bold;
+      text-align: right;
+      vertical-align: top;
+    }
+    &:last-child {
+      text-align: center;
+    }
+    &:first-child {
+      font-weight: normal;
+      text-align: left;
     }
   }
 }
