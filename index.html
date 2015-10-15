@@ -1,441 +1,431 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
-        <link rel="stylesheet" type="text/css" href="css/template.css"/>
-        <meta charset="utf-8">
-        <title>Mērnieks</title>
-    </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/template.css"/>
+    <meta charset="utf-8">
+    <title>Mērnieks</title>
+</head>
 
-    <body>
-        <header class="header">
-            <div class="wrapper">
-                <a class="logo" href="#"><img src="images/logo.png"></a>
-                <nav class="mainMenu hor">
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <nav class="mainMenu hor">
+            <ul>
+                <li><a class="active" href="#">Sākums</a></li>
+                <li><a href="#">Pakalpojumi</a></li>
+                <li><a href="#">Par mums</a></li>
+                <li><a href="#">Klienti</a></li>
+                <li><a href="#">Kontakti</a></li>
+            </ul>
+        </nav>
+        <nav class="lang hor">
+            <ul>
+                <li><a href="#">RU</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="slider">
+    <div id="slide1" class="slide" style="background-image: url(_temp/slide-1.png); display: none;">
+        <div class="sliderText">
+            <h1 class="slideContent">
+                Mērniecība
+            </h1>
+            <br>
+
+            <h3 class="slideContent">
+                Zemesgabalu robežu uzmērīšana<br> zemes un būvju reģistrācijai
+            </h3>
+        </div>
+    </div>
+    <div id="slide2" class="slide" style="background-image: url(_temp/slide-2.png); display: none;">
+        <div class="sliderText">
+            <h1 class="slideContent">
+                Mērniecība
+            </h1>
+            <br>
+
+            <h3 class="slideContent">
+                Apakšzemes komunikāciju<br> uzmērīšana un saskaņošana
+            </h3>
+        </div>
+    </div>
+    <div id="slide3" class="slide" style="background-image: url(_temp/slide-3.png);">
+        <div class="sliderText right">
+            <h1 class="slideContent">
+                Zemes ierīcība
+            </h1>
+            <br>
+
+            <h3 class="slideContent">
+                Aktualizējam un izgatavojam zemes robežu,<br> situācijas un apgrūtinājuma plānus.
+            </h3>
+        </div>
+    </div>
+    <button class="controls prevSlide">
+        <img src="images/slider-arrow-prev.png">
+    </button>
+    <div class="controls nextSlide">
+        <img src="images/slider-arrow-next.png">
+    </div>
+    <div class="slidesBullets">
+        <button id="bullet1" class="bullet"></button>
+        <button id="bullet2" class="bullet"></button>
+        <button id="bullet3" class="bullet active"></button>
+    </div>
+</section>
+<section class="lightBlock content">
+    <div class="wrapper">
+        <h2>Pakalpojumi</h2>
+
+        <div class="column3">
+            <div class="column">
+                <div class="columnIcon">
+                    <img src="images/geo-icon.png">
+                </div>
+                <div class="columnText">
+                    <h3>ģeodēzija</h3>
                     <ul>
-                        <li><a class="active" href="#">Sākums</a></li>
-                        <li><a href="#">Pakalpojumi</a></li>
-                        <li><a href="#">Par mums</a></li>
-                        <li><a href="#">Klienti</a></li>
-                        <li><a href="#">Kontakti</a></li>
+                        <li>
+                            Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā 1:250, 1:500, 1:1000, 1:2000;
+                        </li>
+                        <li>
+                            Apakšzemes komunikāciju uzmērīšana un saskaņošana;
+                        </li>
+                        <li>
+                            Situācijas uzmērīšana;
+                        </li>
+                        <li>
+                            Būvasu nospraušana;
+                        </li>
+                        <li>
+                            Konstrukciju novietojuma pārbaude.
+                        </li>
                     </ul>
-                </nav>
-                <nav class="lang hor">
+                </div>
+            </div>
+            <div class="column">
+                <div class="columnIcon">
+                    <img src="images/mer-icon.png">
+                </div>
+                <div class="columnText">
+                    <h3>Mērniecība</h3>
                     <ul>
-                        <li><a href="#">RU</a></li>
-                        <li><a href="#">EN</a></li>
+                        <li>
+                            Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;
+                        </li>
+                        <li>
+                            Zemesgabalu robežu noteikšana dabā;
+                        </li>
+                        <li>
+                            Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;
+                        </li>
+                        <li>
+                            Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma
+                            izstrādes.
+                        </li>
+                        <li>
+                            Meža transformējamo platību uzmērīšana;
+                        </li>
+                        <li>
+                            Robežstigu un vizūru noteikšana;
+                        </li>
+                        <li>
+                            Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="slider">
-            <div id="slide1" class="slide" style="background-image: url(_temp/slide-1.png); display: none;">
-                <div class="sliderText">
-                    <h1 class="slideContent">
-                        Mērniecība
-                    </h1>
-                    <br>
-                    <h3 class="slideContent">
-                        Zemesgabalu robežu uzmērīšana<br> zemes un būvju reģistrācijai
-                    </h3>
                 </div>
             </div>
-            <div id="slide2" class="slide" style="background-image: url(_temp/slide-2.png); display: none;">
-                <div class="sliderText">
-                    <h1 class="slideContent">
-                        Mērniecība
-                    </h1>
-                    <br>
-                    <h3 class="slideContent">
-                        Apakšzemes komunikāciju<br> uzmērīšana un saskaņošana
-                    </h3>
+            <div class="column">
+                <div class="columnIcon">
+                    <img src="images/ier-icon.png">
+                </div>
+                <div class="columnText">
+                    <h3>Zemes ierīcība</h3>
+                    <ul>
+                        <li>
+                            Zemes ierīcības projektu izstrāde;
+                        </li>
+                        <li>
+                            Zemes ierīcības projektu saskaņošana.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="slide3" class="slide" style="background-image: url(_temp/slide-3.png);">
-                <div class="sliderText right">
-                    <h1 class="slideContent">
-                        Zemes ierīcība
-                    </h1>
-                    <br>
-                    <h3 class="slideContent">
-                        Aktualizējam un izgatavojam zemes robežu,<br> situācijas un apgrūtinājuma plānus.
-                    </h3>
+        </div>
+        <h2>Pakalpojumu Izcenojumi</h2>
+
+        <div class="column2">
+            <div class="column">
+                <div class="columnText">
+                    <p>
+                        Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu sarkano līniju), pieņemšanu,
+                        pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu
+                        pašvaldībai:
+                    </p>
                 </div>
+                <table class="contentTable">
+                    <tr>
+                        <td>Pakalpojums</td>
+                        <td>EUR&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</td>
+                        <td>21,34</td>
+                    </tr>
+                    <tr>
+                        <td>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</td>
+                        <td>24,19</td>
+                    </tr>
+                    <tr>
+                        <td>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</td>
+                        <td>31,30</td>
+                    </tr>
+                    <tr>
+                        <td>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha,bet ne vairāk kā 135.17 EUR
+                            kopā par vienu objektu
+                        </td>
+                        <td>10,67</td>
+                    </tr>
+                    <tr>
+                        <td class="note" colspan="2"><i>objektos, kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas,
+                            tāmei tiek piemērotskoeficients
+                            0.8</i></td>
+                    </tr>
+                </table>
             </div>
-            <button class="controls prevSlide">
-                <img src="images/slider-arrow-prev.png">
-            </button>
-            <div class="controls nextSlide">
-                <img src="images/slider-arrow-next.png">
-            </div>
-            <div class="slidesBullets">
-                <button id="bullet1" class="bullet"></button>
-                <button id="bullet2" class="bullet"></button>
-                <button id="bullet3" class="bullet active"></button>
-            </div>
-        </section>
-        <section class="lightBlock content">
-            <div class="wrapper">
-                <h1>Pakalpojumi</h1>
-                <div class="column3">
-                    <div class="column">
-                        <div class="columnIcon">
-                            <img src="images/geo-icon.png">
-                        </div>
-                        <div class="columnText">
-                            <h3>ģeodēzija</h3>
-                            <ul>
-                                <li>
-                                    Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;
-                                </li>
-                                <hr>
-                                <li>
-                                    Apakšzemes komunikāciju uzmērīšana un saskaņošana;
-                                </li>
-                                <hr>
-                                <li>
-                                    Situācijas uzmērīšana;
-                                </li>
-                                <hr>
-                                <li>
-                                    Būvasu nospraušana;
-                                </li>
-                                <hr>
-                                <li>
-                                    Konstrukciju novietojuma pārbaude.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="columnIcon">
-                            <img src="images/mer-icon.png">
-                        </div>
-                        <div class="columnText">
-                            <h3>Mērniecība</h3>
-                            <ul>
-                                <li>
-                                    Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;
-                                </li>
-                                <hr>
-                                <li>
-                                    Zemesgabalu robežu noteikšana dabā;
-                                </li>
-                                <hr>
-                                <li>
-                                    Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;
-                                </li>
-                                <hr>
-                                <li>
-                                    Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.
-                                </li>
-                                <hr>
-                                <li>
-                                    Meža transformējamo platību uzmērīšana;
-                                </li>
-                                <hr>
-                                <li>
-                                    Robežstigu un vizūru noteikšana;
-                                </li>
-                                <hr>
-                                <li>
-                                    Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="columnIcon">
-                            <img src="images/ier-icon.png">
-                        </div>
-                        <div class="columnText">
-                            <h3>Zemes ierīcība</h3>
-                            <ul>
-                                <li>
-                                    Zemes ierīcības projektu izstrāde;
-                                </li>
-                            <hr>
-                                <li>
-                                    Zemes ierīcības projektu saskaņošana.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="column">
+                <div class="columnText">
+                    <p>
+                        Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu,
+                        pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu
+                        pašvaldībai:
+                    </p>
                 </div>
-                <h1>Pakalpojumu Izcenojumi</h1>
-                <div class="column2">
-                    <div class="column">
-                        <div class="columnText">
-                            <p>
-                                Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu sarkano līniju), pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:
-                            </p>
-                        </div>
-                        <div class="contentTable">
-                            <div class="row">
-                                <div class="cell">
-                                    Pakalpojums
-                                </div>
-                                <div class="cell">
-                                    EUR&nbsp;
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts
-                                </div>
-                                <div class="cell">
-                                    21,34
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts
-                                </div>
-                                <div class="cell">
-                                    24,19
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts
-                                </div>
-                                <div class="cell">
-                                    31,30
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie objekta platības virs 1.0 ha, papildus par katru nākamo ha,bet ne vairāk kā  135.17 EUR kopā par vienu objektu
-                                </div>
-                                <div class="cell">
-                                    10,67
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tableNote">
-                            objektos, kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas, tāmei tiek piemērotskoeficients 0.8
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="columnText">
-                            <p>
-                                Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:
-                            </p>
-                        </div>
-                        <div class="contentTable">
-                            <div class="row">
-                                <div class="cell">
-                                    Pakalpojums
-                                </div>
-                                <div class="cell">
-                                    EUR&nbsp;
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie trases garuma līdz 300 m, viens objekts
-                                </div>
-                                <div class="cell">
-                                    21,34
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    pie trases garuma virs 300 m, papildus par katriem nākamajiem 100 m, bet ne vairāk kā 135.17 EUR kopā par vienu objektu
-                                </div>
-                                <div class="cell">
-                                    24,19
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cellFull">
-                                    Par vienreizēju topogrāfiskās informācijas sagatavošanu un izsniegšanu digitālā formā (objekta platība tiek noteikta pa pieprasīto kontūru):
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    objekta platība līdz 25ha (ieskaitot), viens objekts
-                                </div>
-                                <div class="cell">
-                                    2,85
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell">
-                                    objekta platība virs 25ha, papildus par katru nākamo ha
-                                </div>
-                                <div class="cell">
-                                    0,07
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <table class="contentTable">
+                    <tr>
+                        <td>Pakalpojums</td>
+                        <td>EUR&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>pie trases garuma līdz 300 m, viens objekts</td>
+                        <td>21,34</td>
+                    </tr>
+                    <tr>
+                        <td>pie trases garuma virs 300 m, papildus par katriem nākamajiem 100 m, bet ne vairāk kā 135.17
+                            EUR kopā par vienu objektu
+                        </td>
+                        <td>24,19</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Par vienreizēju topogrāfiskās informācijas sagatavošanu un izsniegšanu digitālā
+                            formā
+                            (objekta platība tiek noteikta pa pieprasīto kontūru):
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>objekta platība līdz 25ha (ieskaitot), viens objekts</td>
+                        <td>2,85</td>
+                    </tr>
+                    <tr>
+                        <td>objekta platība virs 25ha, papildus par katru nākamo ha</td>
+                        <td>0,07</td>
+                    </tr>
+                </table>
             </div>
-        </section>
-        <section class="darkBlock content">
-            <div class="wrapper">
-                <h1>Par mums</h1>
+        </div>
+    </div>
+</section>
+<section class="darkBlock content">
+    <div class="wrapper">
+        <h2>Par mums</h2>
+
+        <p>
+            Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi padarīts darbs, lojalitāte pret
+            katru klientu un demokrātiskas cenas kā uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā
+            jau kopš 1996. gada, darba pieredze ir uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet
+            2012. gadā apvienojoties mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils
+            mērnieks”. Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls
+            sadarbības partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.
+        </p>
+
+        <div class="column2">
+            <div class="column">
+                <div class="fotoBorder">
+                    <img src="_temp/edgars.png">
+                </div>
+                <h2>Edgars Ūdris</h2>
+                <hr>
                 <p>
-                    Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet 2012. gadā apvienojoties mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils mērnieks”. Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls sadarbības partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.
+                    tel. +371 29114401<br>
+                    edgars@ventspilsmernieks.lv
                 </p>
-                <div class="column2">
-                    <div class="column">
-                        <div class="fotoBorder">
-                            <img src="_temp/edgars.png">
-                        </div>
-                        <h1>Edgars Ūdris</h1>
-                        <hr>
-                        <p>
-                            tel. +371 29114401<br>
-                            edgars@ventspilsmernieks.lv
-                        </p>
-                        <div class="certsBlock">
-                            <div class="cert">
-                                <div class="certWrapper">
-                                    <img src="images/certs-icon.png">
-                                    <p>
-                                        Zemes ierīcības darbi<br>
-                                        sertifikāta Nr. BA-72
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="cert">
-                                <div class="certWrapper">
-                                    <img src="images/certs-icon.png">
-                                    <p>
-                                        Kadastrālās uzmērīšanas darbi<br>
-                                        sertifikāta Nr. BB-73
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="aboutText">
+
+                <div class="certsBlock">
+                    <div class="cert">
+                        <div class="certWrapper">
+                            <img src="images/certs-icon.png">
+
                             <p>
-                                Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).
-                            </p>
-                            <p>
-                                Uzmērīšanas, zemes ierīcības darbu un NĪVKR dokumentācijas noformēšanu un kārtošanu, kā arī zemes robežu un situācijas plānu, zemes robežu, situāciju  un apgrūtinājuma plānu izstrādi.
+                                Zemes ierīcības darbi<br>
+                                sertifikāta Nr. BA-72
                             </p>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="fotoBorder">
-                            <img src="_temp/tomass.png">
-                        </div>
-                        <h1>Tomass Soopargs</h1>
-                        <hr>
-                        <p>
-                            tel. +371 29235562<br>
-                            tomass@ventspilsmernieks.lv
-                        </p>
-                        <div class="certsBlock">
-                            <div class="cert">
-                                <div class="certWrapper">
-                                    <img src="images/certs-icon.png">
-                                    <p>
-                                        Ģeodēziskie darbi<br>
-                                        sertifikāta Nr. BC-71
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="aboutText">
+                    <div class="cert">
+                        <div class="certWrapper">
+                            <img src="images/certs-icon.png">
+
                             <p>
-                                Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu ģeodēzisko izpēti būvniecības un teritorijas plānošanas vajadzībām, ģeodēzisko datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā.<br>
-                            </p>
-                            <p>
-                                Uzmērīs un izgatavos topogrāfiskos plānus objektiem, klientam vēlamajā merogā. Veiks virszemes un apakšzemes inženierkomunikāciju uzmērīšanu un attēlojuma saskaņošanu ar inženierkomunikāciju turētājiem.
+                                Kadastrālās uzmērīšanas darbi<br>
+                                sertifikāta Nr. BB-73
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="lightBlock content">
-            <div class="wrapper">
-                <h1>klienti</h1>
-                <div class="logos">
-                    <a href="#">
-                        <img src="_temp/klients/1.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/2.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/3.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/4.png">
-                    </a>
-                    <a href="#">
-                         <img src="_temp/klients/5.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/6.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/7.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/8.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/9.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/10.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/11.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/12.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/13.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/14.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/15.png">
-                    </a>
-                    <a href="#">
-                        <img src="_temp/klients/16.png">
-                    </a>
+                <div class="aboutText">
+                    <p>
+                        Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu kadastrālo uzmērīšanu un
+                        topogrāfisko izpēti būvniecības un teritorijas plānošanas vajadzībām, datu reģistrāciju un
+                        aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).
+                    </p>
+
+                    <p>
+                        Uzmērīšanas, zemes ierīcības darbu un NĪVKR dokumentācijas noformēšanu un kārtošanu, kā arī
+                        zemes robežu un situācijas plānu, zemes robežu, situāciju un apgrūtinājuma plānu izstrādi.
+                    </p>
                 </div>
             </div>
-        </section>
-        <section class="darkBlock content">
-            <div class="wrapper">
-                <h1>Kontakti</h1>
-                <div class="column3">
-                    <div class="column">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2150.1344778224498!2d21.5482938!3d57.390846999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f1c8ff1d9b370d%3A0xd96ace88f9ebee0d!2zVmFzYXJuxKtjdSBpZWxhIDksIFZlbnRzcGlscywgTFYtMzYwMSwg0JvQsNGC0LLQuNGP!5e0!3m2!1sru!2sru!4v1443904182071" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="column centered">
-                        <img class="contIcon" src="images/cont-icon.png">
-                        <p class="contactsInfo">
-                            SIA "VENTSPILS MĒRNIEKS”<br>
-                            <span>tālrunis: + 371 29235562, 29114401</span><br>
-                            e-pasts: birojs@ventspilsmernieks.lv<br>
-                            Vasarnīcu iela 9<br>
-                            Ventspils, LV-3601<br>
-                        </p>
-                    </div>
-                    <div class="column">\
-                        <form>
-                            <h3>Sazināties ar mums</h3>
-                            <input placeholder="Vārds" type="text" class="name">
-                            <input placeholder="E-pasts" type="email" class="email">
-                            <br>
-                            <textarea placeholder="Teksts..."></textarea>
-                            <input type="submit" value="Sūtīt →">
-                        </form>
+            <div class="column">
+                <div class="fotoBorder">
+                    <img src="_temp/tomass.png">
+                </div>
+                <h2>Tomass Soopargs</h2>
+                <hr>
+                <p>
+                    tel. +371 29235562<br>
+                    tomass@ventspilsmernieks.lv
+                </p>
+
+                <div class="certsBlock">
+                    <div class="cert">
+                        <div class="certWrapper">
+                            <img src="images/certs-icon.png">
+
+                            <p>
+                                Ģeodēziskie darbi<br>
+                                sertifikāta Nr. BC-71
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div class="aboutText">
+                    <p>
+                        Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu ģeodēzisko izpēti
+                        būvniecības un teritorijas plānošanas vajadzībām, ģeodēzisko datu reģistrāciju un aktualizāciju
+                        Nekustamā īpašuma valsts kadastra reģistrā.<br>
+                    </p>
+
+                    <p>
+                        Uzmērīs un izgatavos topogrāfiskos plānus objektiem, klientam vēlamajā merogā. Veiks virszemes
+                        un apakšzemes inženierkomunikāciju uzmērīšanu un attēlojuma saskaņošanu ar inženierkomunikāciju
+                        turētājiem.
+                    </p>
+                </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </div>
+</section>
+<section class="lightBlock content">
+    <div class="wrapper">
+        <h2>klienti</h2>
+        <div class="logos">
+            <a href="#">
+                <img src="_temp/klients/1.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/2.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/3.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/4.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/5.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/6.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/7.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/8.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/9.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/10.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/11.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/12.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/13.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/14.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/15.png">
+            </a>
+            <a href="#">
+                <img src="_temp/klients/16.png">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="darkBlock content">
+    <div class="wrapper">
+        <h2>Kontakti</h2>
+
+        <div class="column3">
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2150.1344778224498!2d21.5482938!3d57.390846999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f1c8ff1d9b370d%3A0xd96ace88f9ebee0d!2zVmFzYXJuxKtjdSBpZWxhIDksIFZlbnRzcGlscywgTFYtMzYwMSwg0JvQsNGC0LLQuNGP!5e0!3m2!1sru!2sru!4v1443904182071"
+                        width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="column centered">
+                <img class="contIcon" src="images/cont-icon.png">
+
+                <p class="contactsInfo">
+                    SIA "VENTSPILS MĒRNIEKS”<br>
+                    <span>tālrunis: + 371 29235562, 29114401</span><br>
+                    e-pasts: birojs@ventspilsmernieks.lv<br>
+                    Vasarnīcu iela 9<br>
+                    Ventspils, LV-3601<br>
+                </p>
+            </div>
+            <div class="column">\
+                <form>
+                    <h3>Sazināties ar mums</h3>
+                    <input placeholder="Vārds" type="text" class="name">
+                    <input placeholder="E-pasts" type="email" class="email">
+                    <br>
+                    <textarea placeholder="Teksts..."></textarea>
+                    <input type="submit" value="Sūtīt →">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
 </html>

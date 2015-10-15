@@ -202,7 +202,7 @@ html {
       padding-bottom: 50px;
       &.lightBlock {
         background: url(../images/light-background.jpg);
-        h1 {
+        h2 {
           &:first-of-type {
             margin-top: 0;
           }
@@ -217,7 +217,7 @@ html {
       }
       &.darkBlock {
         background: url(../images/dark-background.jpg);
-        h1 {
+        h2 {
           &:first-of-type {
             margin-top: 0;
           }
@@ -246,7 +246,7 @@ html {
               width: 175px;
               height: 175px;
             }
-            h1 {
+            h2 {
               border: none;
               text-transform: none;
               font-size: 30px;
@@ -270,15 +270,16 @@ html {
                 .certWrapper {
                   padding-left: 5px;
                   img {
-                    float: left;
-                    margin-top: 2px;
-                    margin-right: 20px;
-                    width: 28px;
-                    height: 39px;
+                    width: 25px;
+                    height: 35px;
+                    vertical-align: sub;
+                    margin-right: 8px;
                   }
                   p {
                     text-align: left;
                     color: #eadfcd;
+                    font-size: 14px;
+                    display: inline-block;
                   }
                 }
               }
@@ -304,21 +305,17 @@ html {
           &:nth-last-of-type(odd) {
             margin-left: 2%;
           }
-          .contentTable {
-            .row {
-              padding: 10px;
+          table.contentTable {
+            border-collapse: collapse;
+            tr {
               &:first-of-type,&:last-of-type {
                 border-bottom: 2px solid #dfd9cf;
               }
               &:nth-of-type(even) {
                 background: #f2ebe1;
               }
-              .cellFull {
-                width: 100%;
-                font-weight: bold;
-              }
-              .cell {
-                display: inline-block;
+              td {
+                padding: 10px;
                 &:first-of-type {
                   width: 83%;
                 }
@@ -328,12 +325,15 @@ html {
                   text-align: right;
                   vertical-align: top;
                 }
+                &:last-child {
+                  text-align: center;
+                }
+                &:first-child {
+                  font-weight: normal;
+                  text-align: left;
+                }
               }
             }
-          }
-          .tableNote {
-            padding: 10px;
-            font-style: italic;
           }
         }
       }
@@ -377,6 +377,14 @@ html {
             margin: 0;
             padding: 0;
             li {
+              &:after {
+                border: #c7c6bf 2px solid;
+                width: 30%;
+                border-top: none;
+                margin: 10px 0 5px 0;
+                content: '';
+                display: block;
+              }
               &:first-of-type {
                 padding-top: 0;
               }
@@ -385,19 +393,12 @@ html {
               list-style: none;
             }
           }
-          hr {
-            border-color: #c7c6bf;
-            width: 30%;
-            border-top: none;
-            display: inline-block;
-            margin: 10px 0 5px 0;
-          }
         }
       }
       .logos {
         a {
           display: inline-block;
-          width: 200px;
+          width: 225px;
           height: 100px;
           margin: 10px 10px;
           text-align: center;
