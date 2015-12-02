@@ -19,11 +19,11 @@
         <a class="logo" href="#"><img src="images/logo.png"></a>
         <nav class="mainMenu hor">
             <ul>
-                <li><a class="active" href="#">Sākums</a></li>
-                <li><a href="#pakalpojumi">Pakalpojumi</a></li>
-                <li><a href="#par-mums">Par mums</a></li>
-                <li><a href="#klienti">Klienti</a></li>
-                <li><a href="#contacts">Kontakti</a></li>
+                <li><a href="#">Sākums</a></li>
+                <li><a class="smoothScrollLink" onclick="return false;" href="#pakalpojumi">Pakalpojumi</a></li>
+                <li><a class="smoothScrollLink" onclick="return false;" href="#par-mums">Par mums</a></li>
+                <li><a class="smoothScrollLink" onclick="return false;" href="#klienti">Klienti</a></li>
+                <li><a class="smoothScrollLink" onclick="return false;" href="#contacts">Kontakti</a></li>
             </ul>
         </nav>
         <nav class="lang hor">
@@ -35,53 +35,51 @@
     </div>
 </header>
 <section class="slider">
-    <div id="slide1" class="slide" style="background-image: url(_temp/slide-1.png); display: none;">
-        <div class="sliderText">
-            <h2 class="slideContent">
-                Mērniecība
-            </h2>
-            <br>
+    <div class="slides">
+        <div id="slide_1" class="slide active" style="background-image: url(_temp/slide-1.png);">
+            <div class="sliderText">
+                <h2 class="slideContent">
+                    Mērniecība
+                </h2>
+                <br>
 
-            <h3 class="slideContent">
-                Zemesgabalu robežu uzmērīšana<br> zemes un būvju reģistrācijai
-            </h3>
+                <h3 class="slideContent">
+                    Zemesgabalu robežu uzmērīšana<br> zemes un būvju reģistrācijai
+                </h3>
+            </div>
+        </div>
+        <div id="slide_2" class="slide" style="background-image: url(_temp/slide-3.png);">
+            <div class="sliderText right">
+                <h2 class="slideContent">
+                    Zemes ierīcība
+                </h2>
+                <br>
+
+                <h3 class="slideContent">
+                    Aktualizējam un izgatavojam zemes robežu,<br> situācijas un apgrūtinājuma plānus.
+                </h3>
+            </div>
+        </div>
+        <div id="slide_3" class="slide" style="background-image: url(_temp/slide-2.png);">
+            <div class="sliderText">
+                <h2 class="slideContent">
+                    Mērniecība
+                </h2>
+                <br>
+
+                <h3 class="slideContent">
+                    Apakšzemes komunikāciju<br> uzmērīšana un saskaņošana
+                </h3>
+            </div>
         </div>
     </div>
-    <div id="slide2" class="slide" style="background-image: url(_temp/slide-2.png); display: none;">
-        <div class="sliderText">
-            <h2 class="slideContent">
-                Mērniecība
-            </h2>
-            <br>
-
-            <h3 class="slideContent">
-                Apakšzemes komunikāciju<br> uzmērīšana un saskaņošana
-            </h3>
-        </div>
-    </div>
-    <div id="slide3" class="slide" style="background-image: url(_temp/slide-3.png);">
-        <div class="sliderText right">
-            <h2 class="slideContent">
-                Zemes ierīcība
-            </h2>
-            <br>
-
-            <h3 class="slideContent">
-                Aktualizējam un izgatavojam zemes robežu,<br> situācijas un apgrūtinājuma plānus.
-            </h3>
-        </div>
-    </div>
-    <button class="controls prevSlide">
+    <button class="controls prevSlide hide">
         <img src="images/slider-arrow-prev.png">
     </button>
     <button class="controls nextSlide">
         <img src="images/slider-arrow-next.png">
     </button>
-    <div class="slidesBullets">
-        <button id="bullet1" class="bullet"></button>
-        <button id="bullet2" class="bullet"></button>
-        <button id="bullet3" class="bullet active"></button>
-    </div>
+    <div class="slidesBullets"></div>
 </section>
 <section id="pakalpojumi" class="lightBlock content">
     <div class="wrapper">
@@ -436,5 +434,7 @@
     inputPlaceholder(document.getElementById('epasts'));
     inputPlaceholder(document.getElementById('teksts'));
 </script>
+<script src="js/slider.js"></script>
+<script src="js/smoothScroll.js"></script>
 </body>
 </html>
