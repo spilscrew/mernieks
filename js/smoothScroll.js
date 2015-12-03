@@ -2,14 +2,19 @@ var smoothScroll = {
     links: [],
     heightArray: [],
     destinationHeight: function () {
+        this.heightArray = [];
         for(var y=0; y<this.links.length; y++) {
             var destinationId = document.querySelector("a[href='"+this.links[y]+"']").hash.substring(1);
             var destinationHeight = document.getElementById(destinationId);
             this.heightArray.push(destinationHeight.offsetTop);
+            console.log(smoothScroll.heightArray+" function");
         }
     },
     clickOnLink: function(num) {
         document.querySelector("a[href='"+this.links[num]+"']").onclick = function () {
+            this.heightArray = [];
+            smoothScroll.destinationHeight();
+            console.log(smoothScroll.heightArray+" click");
             var px = 0;
             scrollInterval = setInterval(function(){
                 if (px<smoothScroll.heightArray[num]) {

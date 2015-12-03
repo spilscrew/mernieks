@@ -5,7 +5,7 @@ var sliderObj = {
         document.querySelector(".nextSlide").onclick = function () {
             if (sliderObj.sliderIndex < sliderObj.pagesLength) {
                 sliderObj.sliderIndex++;
-                sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
+                //sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
                 sliderObj.activeElements(sliderObj.sliderIndex);
                 sliderObj.interval("clear");
             }
@@ -15,7 +15,7 @@ var sliderObj = {
         document.querySelector(".prevSlide").onclick = function () {
             if (sliderObj.sliderIndex > 1) {
                 sliderObj.sliderIndex--;
-                sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
+                //sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
                 sliderObj.activeElements(sliderObj.sliderIndex);
                 sliderObj.interval("clear");
             }
@@ -27,11 +27,11 @@ var sliderObj = {
             intervalShow = setInterval(function(){
                 if (sliderObj.sliderIndex < sliderObj.pagesLength) {
                     sliderObj.sliderIndex++;
-                    sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
+                    //sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
                     sliderObj.activeElements(sliderObj.sliderIndex);
                 } else {
                     sliderObj.sliderIndex = 1;
-                    sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
+                    //sliderObj.sliderIndex = sliderObj.sliderIndex.toString();
                     sliderObj.activeElements(sliderObj.sliderIndex);
                 }
             }, 3500);
@@ -56,7 +56,7 @@ var sliderObj = {
 
         /*** Get ID number ***/
         //if(!isNaN(bulletId)) {
-            bulletId = bulletId.replace(/\D/g, '');
+        //bulletId = bulletId.replace(/\D/g, '');
         //}
 
         /*** Add slide active class ***/
@@ -83,7 +83,7 @@ var sliderObj = {
         }
     },
     sliderPages: function(bulletId,sliderIndex) {
-        document.querySelector(bulletId).onclick = function() {
+        document.querySelector("#bullet_"+bulletId).onclick = function() {
             sliderObj.sliderIndex = sliderIndex
             sliderObj.activeElements(bulletId,sliderIndex);
             sliderObj.interval("clear");
@@ -103,7 +103,7 @@ var sliderObj = {
             document.querySelector(".slidesBullets").appendChild(pageButton);
 
             /*** Set bullet ID argument ***/
-            this.sliderPages("#bullet_"+pageNum,pageNum)
+            this.sliderPages(pageNum,pageNum)
         }
         this.nextSlide();
         this.previousSlide();
