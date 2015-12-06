@@ -209,6 +209,7 @@ html {
           padding: 10px 20px;
           cursor: pointer;
           margin-top: 13px;
+          vertical-align: middle;
         }
         input, textarea {
           padding: 2%;
@@ -474,5 +475,20 @@ html {
     }
   }
 }
-
-
+.validationMessage {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 12px;
+  font-weight: bold;
+  color: #c7a457;
+  vertical-align: middle;
+}
+.errorSymbol, .successSymbol {
+  padding-right: 7px;
+}
+.errorSymbol {
+  color: #DF0000;
+}
+.successSymbol {
+  color: #2AAE2A;
+}

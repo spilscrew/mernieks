@@ -416,14 +416,17 @@
                     Ventspils, LV-3601<br>
                 </p>
             </div>
-            <div class="column">\
-                <form>
+            <div class="column">
+                <form id="feedbackForm">
                     <h3>Sazināties ar mums</h3>
                     <input placeholder="Vārds" type="text" id="vards" class="name">
-                    <input placeholder="E-pasts" type="email" id="epasts" class="email">
+                    <input placeholder="E-pasts" type="text" id="epasts" class="email">
                     <br>
                     <textarea placeholder="Teksts..." id="teksts"></textarea>
-                    <input type="submit" value="Sūtīt →">
+                    <div class="verticalMiddle">
+                        <input type="submit" value="Sūtīt →">
+                        <div class="validationMessage"></div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -436,5 +439,6 @@
 </script>
 <script src="js/slider.js"></script>
 <script src="js/smoothScroll.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>
