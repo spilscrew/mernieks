@@ -53,5 +53,5 @@ var validation = {
     init: function () {
         validation.clickSubmit();
     }
-}
+};
 validation.init();

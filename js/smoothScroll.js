@@ -10,17 +10,18 @@ var smoothScroll = {
         }
     },
     clickOnLink: function(num) {
+        var that = this;
         document.querySelector("a[href='"+this.links[num]+"']").onclick = function () {
             this.heightArray = [];
-            smoothScroll.destinationHeight();
+            that.destinationHeight();
             var px = 0;
             scrollInterval = setInterval(function(){
-                if (px<smoothScroll.heightArray[num]) {
+                if (px < that.heightArray[num]) {
                     window.scrollTo(0, px);
                     px+=50;
                 } else {
                     clearInterval(scrollInterval);
-                    window.scrollTo(0, smoothScroll.heightArray[num]);
+                    window.scrollTo(0, that.heightArray[num]);
                 }
             }, 15);
 
@@ -35,6 +36,5 @@ var smoothScroll = {
         }
         this.destinationHeight();
     }
-}
+};
 smoothScroll.smoothScrollInit();
-
